@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activities.AboutActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_owner_photo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/about_owner_display_picture"
+        android:src="@drawable/img_owner_profile" />
+
+    <TextView
+        style="@style/Text.Gray"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/about_owner_name_label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_owner_name"
+        style="@style/Text.Black"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/about_owner_name"
+        android:textSize="25sp" />
+
+    <TextView
+        style="@style/Text.Gray"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/about_owner_email_label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_owner_email"
+        style="@style/Text.Black"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/about_owner_email"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:background="@color/colorPrimary"
+            android:text="@string/about_owner_contact"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
